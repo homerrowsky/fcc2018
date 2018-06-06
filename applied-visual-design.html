@@ -16,17 +16,24 @@
   <!-- <link rel="stylesheet" href="css/main.css"> -->
 
   <style>
-    #left {
-      float: left;
-      width: 50%;
+    div {
+      width: 60%;
+      height: 200px;
+      margin-top: 20px;
     }
-    #right {
-      float: right;
-      width: 40%;
+    
+    .first {
+      background-color: red;
+      position: absolute;
+      z-index: 2;
+      
     }
-    aside, section {
-      padding: 2px;
-      background-color: #ccc;
+    .second {
+      background-color: blue;
+      position: absolute;
+      left: 40px;
+      top: 50px;
+      z-index: 1;
     }
   </style>
 
@@ -39,19 +46,8 @@
 
   <!-- Add your site or application content here -->
 
-  <header>
-    <h1>Welcome!</h1>
-  </header>
-  
-  <section id="left">
-    <h2>Content</h2>
-    <p>Good stuff</p>
-  </section>
-  
-  <aside id="right">
-    <h2>Sidebar</h2>
-    <p>Links</p>
-  </aside>
+  <div class="first"></div>
+  <div class="second"></div>
 
 </body>
 
